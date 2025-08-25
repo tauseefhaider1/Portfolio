@@ -1,22 +1,35 @@
 import React from "react";
-import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
 import Navbar from "./Navbar";
-import Herosec from "./Herosec";   // Home page
+import Herosec from "./Herosec";   // Home section
 import About from "./About";
 import Contact from "./Contact";
 import Project from "./Project";
 
 const App = () => {
   return (
-    <Router>
+    <div>
       <Navbar />
-      <Routes>
-        <Route path="/" element={<Herosec />} />
-        <Route path="/about" element={<About />} />
-        <Route path="/contact" element={<Contact />} />
-        <Route path="/projects" element={<Project />} />
-      </Routes>
-    </Router>
+      
+      {/* Home Section */}
+      <section id="home">
+        <Herosec />
+      </section>
+
+      {/* About Section */}
+      <section id="about">
+        <About />
+      </section>
+
+      {/* Projects Section */}
+      <section id="projects">
+        <Project />
+      </section>
+
+      {/* Contact Section */}
+      <section id="contact">
+        <Contact />
+      </section>
+    </div>
   );
 };
 

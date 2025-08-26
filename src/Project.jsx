@@ -62,7 +62,7 @@ const Project = () => {
             </p>
             <div className="flex gap-4 animate-fadeIn delay-100">
               <a
-                href="https://your-live-link.com"
+                href="pyari-walls.vercel.app "
                 target="_blank"
                 rel="noopener noreferrer"
                 className="px-6 py-3 bg-gradient-to-r from-blue-500 to-cyan-400 text-white rounded-2xl shadow-lg hover:scale-105 hover:from-blue-600 hover:to-cyan-500 transition transform duration-300"
